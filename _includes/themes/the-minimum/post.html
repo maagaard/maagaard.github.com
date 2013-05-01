@@ -5,6 +5,13 @@
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
 						<h1 class="h2 entry-title">{{ page.title }}</h1>
+						<p class="date-publish">
+							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
+							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
+							<span class="day">{{ page.date | date: '%d' }}</span>
+							<span class="year">{{ page.date | date: '%Y' }}</span>
+							</date>
+						</p>						
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
@@ -13,14 +20,6 @@
 				<div class="entry-content">
 					{{ content }}
 					<div class="meta">
-						<p class="date-publish">
-							Published: 
-							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
-							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
-							<span class="day">{{ page.date | date: '%d' }}</span>
-							<span class="year">{{ page.date | date: '%Y' }}</span>
-							</date>
-						</p>
 						<ul class="list-category list-linear">
 							<li class="list-head">category: </li>
 							{% assign categories_list = page.categories %}
@@ -60,9 +59,6 @@
 							{% endif %}
 						</ul>
 					</nav>
-					<p class="gotop">
-						<a href="#page">Back to Top</a>
-					</p>
 				</div>
 			</footer>
 
