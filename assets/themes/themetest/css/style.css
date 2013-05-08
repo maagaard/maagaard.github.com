@@ -21,14 +21,21 @@ body {
 h2, h3, h4, h5 {
   font-weight: 400;
   
-  a {
-    color: #202020;
-    
+  a {  
+    color: #202020;  
     &:hover{
       color: $green;
       text-decoration: none;
     }
   }
+}
+
+a {
+	color: #668866;
+}
+a:hover {
+	color: #668866;
+	text-decoration: none;	
 }
 
 /* posts index */
@@ -41,9 +48,16 @@ h2, h3, h4, h5 {
 
     .post-title {
       font-size: 1.3em;
+      
     }
   }
 }
+
+
+.post-title-url {	
+	color:#202020;
+}
+
 
 .post {
   .post-header {
