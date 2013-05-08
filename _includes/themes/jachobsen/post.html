@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} {{ site.title }}</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/webfonts/ss-social-circle.css"/>
+
+    {% css_asset_tag global %}
+      - /_assets/stylesheets/bootstrap.min.css
+      - /_assets/stylesheets/bootstrap-responsive.min.css
+      - /_assets/stylesheets/screen.css.scss
+      - /_assets/stylesheets/syntax.css.scss
+    {% endcss_asset_tag %}
+
+    {% javascript_asset_tag global %}
+      - /_assets/javascript/bootstrap.min.js
+      - /_assets/javascript/ss-social.js
+    {% endjavascript_asset_tag %}
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span7 offset2">
+          {% include header.html %}
+
+          <article class="post">
+            <header class="post-header">
+              <h2 class="post-title">{{ page.title }}</h2>
+              <time class="post-date">{{ page.date | date_to_string }}</time>
+              <section class="post-categories">
+                {% include categories.html %}
+              </section>
+            </header>
+            <section class="post-content">
+              {{ content }}
+            </section>
+          </article>
+
+          {% include footer.html %}
+        </div>
+        <div class="span3">
+          {% include sidesection.html %}
+        </div>
+      </div>
+    </div>
+    {% include google_analytics.html %}
+  </body>
+</html>

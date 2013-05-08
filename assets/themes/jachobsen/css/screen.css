@@ -1,0 +1,158 @@
+$green: #90A959;
+$light_gray: #DDD;
+$gray: #999;
+$dark_gray: #CCC;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: #202020;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+
+  a {
+    color: #202020;
+
+    &:hover{
+      color: $green;
+      text-decoration: none;
+    }
+  }
+}
+
+time {
+  color: $gray;
+}
+
+pre, code {
+  font-family: "Source Code Pro", "Consolas";
+}
+
+img {
+  box-shadow: 0 1px 7px rgba(0,0,0,0.3);
+  margin: 15px 0;
+}
+
+#logo {
+  h1 {
+    font-size: 2.5em;
+    margin: 40px 0;
+
+    a {
+      color: $green;
+
+      &:hover {
+        color: #758c43;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+nav {
+  text-align: right;
+  padding: 20px 0;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+#posts {
+  list-style-type: none;
+  margin: 0;
+
+  .post {
+    margin-bottom: 1.7em;
+
+    .post-title {
+      font-size: 1.3em;
+    }
+  }
+}
+
+.post {
+  .post-header {
+    margin-bottom: 20px;
+    font-size: 0.9em;
+
+    .post-date {
+      float: left;
+    }
+
+    .post-categories {
+      text-align: right;
+      color: $gray;
+    }
+  }
+}
+
+.post-content {
+
+  h3 {
+    margin-top: 1.5em;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 1.5em 0;
+  }
+
+  ul, ol {
+    margin: 2em;
+  }
+
+  li {
+    margin: 1em 0;
+  }
+}
+
+footer {
+  text-align: center;
+
+  p {
+    font-size: 0.8em
+  }
+}
+
+#category-title {
+  margin-bottom: 1.3em;
+}
+
+.sidesection {
+  position: fixed;
+  top: 50%;
+  height: 80px;
+  margin-top: -80px;
+  text-align: center;
+
+  h4 {
+    font-weight: 700;
+  }
+}
+
+.social-icons {
+  margin: 20px 0 0 0;
+
+  li {
+    display: inline;
+
+    a {
+      color: $light_gray;
+      font-size: 1.5em;
+
+      &:hover {
+        color: $dark_gray;
+        text-decoration: none;
+      }
+    }
+  }
+}
