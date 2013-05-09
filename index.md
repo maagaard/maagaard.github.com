@@ -3,7 +3,7 @@ layout: default
 tagline: electro engineering student
 ---
 
-{% include JB/setup %}
+<!-- {% include JB/setup %} -->
 
 <!-- 
 <ul class="posts">
