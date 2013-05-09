@@ -30,13 +30,15 @@ h2, h3, h4, h5 {
   }
 }
 
+
 a {
 	color: #668866;
 }
 a:hover {
-	color: #668866;
+	color: #768993;
 	text-decoration: none;	
 }
+
 
 /* posts index */
 #posts {
