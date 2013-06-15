@@ -1,6 +1,6 @@
 ---
 layout: default
-tagline: electro engineering student
+tagline: engineer in spe
 ---
 
 <!-- {% include JB/setup %} -->
