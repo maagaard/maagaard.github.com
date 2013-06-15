@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Hacker safe"
+title: "Hackersafe"
+description: "Tips and tricks"
 category: 
+tags: 
 ---
 
 Watch out for hacker attacks!
