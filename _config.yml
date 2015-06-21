@@ -3,15 +3,22 @@
 permalink: /:year/:month/:day/:title 
 #/:categories removed
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-# auto: true
-pygments: true
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+highlighter: pygments
+
+exclude: ["README.markdown", "Gemfile", "Gemfile.lock", ".rbenv-version", "Rakefile"]
+
+
+
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : maagaard
-tagline: electronic engineering student
+title : MaagaardApps
+tagline: 
 author :
   name : Emil Maagaard
   email : emaagaard@gmail.com
@@ -29,8 +36,6 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://maagaard.github.io
-
-# sass css
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -79,24 +84,6 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
-
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : false #disqus
-    disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
